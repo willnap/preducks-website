@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+h2, h3, h4, nav {
+  color: #FEFFC9;
+  text-decoration-color: #FEFFC9;
+}
+
+a, #get a:hover {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
+a:hover, #get a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(144deg, rgba(255,255,230,0.55) 0%, rgba(255,255,216,0.43) 48%, rgba(255,255,201,0.20) 100%);
+}
+
+header #main {
+  height: 50vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 20px auto 57px;
+}
+
+h2 {
+  font-size: 2.4em;
+  margin: 0 auto;
+  display: flex;
+}
+
+h2 img {
+  height: auto;
+  width: 40px;
+  margin-right: 18px;
+}
+
+nav a {
+  font-size: 1.125em;
+  font-weight: 500;
+  margin-right: 1.875em;
+}
+
+nav a:last-of-type {
+  margin-right: 0;
+}
+
+#screenshot {
+  width: 100vw;
+  max-width: 1136px;
+  margin-bottom: -125px;
+}
+
+section, footer {
+  margin-top: 15vh;
+}
+
+.feature {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 7vh;
+}
+
+.feature:nth-child(2n) {
+  flex-flow: row-reverse nowrap;
+}
+
+.feature .description {
+  max-width: 380px;
+  margin-left: 5vw;
+}
+
+.feature:nth-child(2n) .description {
+  margin-left: 0;
+  margin-right: 5vw;
+}
+
+h3 {
+  font-size: 1.94em;
+  font-weight: 500;
+  margin: 0 0 11px;
+}
+
+h4, span {
+  font-size: 1.32em;
+}
+
+.feature img {
+  width: 220px;
+  height: auto;
+  background-color: #333;
+  border-radius: 7px;
+  box-shadow: 0 0 24px rgba(254, 255, 201, 0.25);
+}
+
+#get img {
+  width: 100px;
+  height: auto;
+}
+
+h4 {
+  font-weight: 500;
+  margin: 22px 0 6px;
+}
+
+#get span {
+  font-size: 0.94em;
+}
