@@ -1,10 +1,13 @@
 window.addEventListener('DOMContentLoaded', () => {
-
   const userAgent = navigator.userAgent;
-  
+
   const updateDownloadLinks = (platformName, downloadLink) => {
-    const nameLocations = Array.from(document.getElementsByClassName('platformName'));
-    const linkLocations = Array.from(document.getElementsByClassName('downloadLink'));
+    const nameLocations = Array.from(
+      document.getElementsByClassName('platformName')
+    );
+    const linkLocations = Array.from(
+      document.getElementsByClassName('downloadLink')
+    );
     const platforms = ['macOS', 'Windows', 'Linux'];
     platforms.splice(platforms.indexOf(platformName), 1);
     nameLocations.forEach(element => {
@@ -13,9 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
     linkLocations.forEach(element => {
       element.setAttribute('href', downloadLink);
     });
-    document.getElementById('other-platform-names').innerText = platforms
-      .toString()
-      .replace(',', ', ');
+    document.getElementById(
+      'other-platform-names'
+    ).innerText = platforms.toString().replace(',', ', ');
   };
 
   const updateBrowserIcon = (browser, isSVG = false, hasiOS = true) => {
@@ -23,16 +26,28 @@ window.addEventListener('DOMContentLoaded', () => {
     if (userAgent.includes('iPhone') && hasiOS) {
       thisBrowser = 'ios-' + thisBrowser;
     }
-    document.getElementById('browser-icon').src = './images/browsers/' + thisBrowser + ((isSVG) ? '.svg' : '.png');
+    document.getElementById('browser-icon').src =
+      './images/browsers/' + thisBrowser + (isSVG ? '.svg' : '.png');
     if (isSVG) {
-      document.getElementById('browser-icon').srcset = './images/browsers/' + thisBrowser + '.svg';
+      document.getElementById('browser-icon').srcset =
+        './images/browsers/' + thisBrowser + '.svg';
     } else {
-      document.getElementById('browser-icon').srcset = './images/browsers/' + thisBrowser + '.png, ./images/browsers/' + thisBrowser + '@2x.png 2x, ./images/browsers/' + thisBrowser + '@3x.png 3x';
+      document.getElementById('browser-icon').srcset =
+        './images/browsers/' +
+        thisBrowser +
+        '.png, ./images/browsers/' +
+        thisBrowser +
+        '@2x.png 2x, ./images/browsers/' +
+        thisBrowser +
+        '@3x.png 3x';
     }
   };
 
   if (userAgent.includes('Win')) {
-    updateDownloadLinks('Windows', 'https://google.com/?search=preducks-windows');
+    updateDownloadLinks(
+      'Windows',
+      'https://google.com/?search=preducks-windows'
+    );
   } else if (userAgent.includes('Linux')) {
     updateDownloadLinks('Linux', 'https://google.com/?search=preducks-linux');
   }
@@ -67,16 +82,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  duck.addEventListener("click", () => spin('select'));
-
+  duck.addEventListener('click', () => spin('select'));
 });
 
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    let app = document.createElement('script');
-    app.src = 'https://app.preducks.com/js/index.js';
-    app.type = 'text/javascript';
-    app.defer = true;
-    document.head.appendChild(app);
-  }, 500);
-});
+// window.addEventListener('load', () => {
+//   setTimeout(() => {
+//     let app = document.createElement('script');
+//     app.src = 'https://app.preducks.com/js/index.js';
+//     app.type = 'text/javascript';
+//     app.defer = true;
+//     document.head.appendChild(app);
+//   }, 500);
+// });
