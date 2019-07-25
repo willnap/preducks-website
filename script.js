@@ -70,3 +70,13 @@ window.addEventListener('DOMContentLoaded', () => {
   duck.addEventListener("click", () => spin('select'));
 
 });
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    let app = document.createElement('script');
+    app.src = 'https://www.preducks.com/js/1.bundle.js';
+    app.type = 'text/javascript';
+    app.defer = true;
+    document.head.appendChild(app);
+  }, 500);
+});

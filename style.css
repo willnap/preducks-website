@@ -155,6 +155,10 @@ h4, span {
   text-decoration: underline;
 }
 
+i {
+  font-style: inherit;
+}
+
 h4 {
   font-weight: 500;
   margin: 22px 0 6px;
@@ -208,8 +212,6 @@ footer, #disclaimers {
 }
 
 footer img {
-  -webkit-filter: drop-shadow(0 0 45px white);
-  filter: drop-shadow(0 0 45px white);
   width: 53px;
   height: auto;
   margin: 0 auto;
