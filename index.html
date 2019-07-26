@@ -2,7 +2,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="draw prototypes, export React/Redux code">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>preducks | draw prototypes, export React/Redux code</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="mask-icon" href="./mask-icon.svg" color="black">
@@ -15,11 +16,14 @@
         <h2><img id="footer-duck" src="./images/preduck.svg" alt="preducks duck logo" />preducks</h2>
         <h1>draw prototypes, export <br id="tagline-break">React/Redux code</h1>
         <nav>
-          <a class="downloadLink" href="">download&nbsp;for&nbsp;<span class="platformName">macOS</span>&nbsp;↓</a>
-          <a href="">try&nbsp;in&nbsp;browser&nbsp;→</a>
+          <!--a class="downloadLink" href="https://github.com/oslabs-beta/preducksDesktop">download&nbsp;for&nbsp;<span class="platformName">macOS</span>&nbsp;↓</a-->
+          <a href="https://app.preducks.com/">try&nbsp;in&nbsp;browser&nbsp;→</a>
         </nav>
       </div>
       <img id="screenshot" src="./images/screenshot.png" alt="" />
+      <div id="github-star">
+        <a class="github-button" href="https://github.com/oslabs-beta/preducks" data-icon="octicon-star" data-size="large" aria-label="Star oslabs-beta/preducks on GitHub">Star</a>
+      </div>
     </header>
     <section id="features">
       <div class="feature">
@@ -48,16 +52,16 @@
       </div>
     </section>
     <section id="get">
-      <div class="platform">
+      <!--div class="platform">
         <a href="">
           <img src="./images/preducks-desktop.svg" alt="app icon for preducks desktop" />
           <h4>download for <i class="platformName">macOS</i> ↓</h4>
         </a>
         <span><a href=""><span id="other-platform-names">Windows, Linux</span> →</a></span>
-      </div>
+      </div-->
       <div class="platform">
         <a class="downloadLink" href="">
-          <img id="browser-icon" srcset="./images/browsers/safari.png, ./images/browsers/safari@2x.png 2x, ./images/browsers/safari@3x.png 3x" src="./images/browsers/safari.png" alt="browser app icon" />
+          <img id="browser-icon" alt="browser app icon" />
           <h4>try in browser →</h4>
         </a>
         <span><a href="">app.preducks.com</a></span>
@@ -73,13 +77,34 @@
       </div>
     </section>
     <section id="github">
-      <figure>
-        <a class="github-button" href="https://github.com/oslabs-beta/preducks/subscription" data-icon="octicon-eye" data-size="large" aria-label="Watch oslabs-beta/preducks on GitHub">Watch</a>
-        <a class="github-button" href="https://github.com/oslabs-beta/preducks" data-icon="octicon-star" data-size="large" aria-label="Star oslabs-beta/preducks on GitHub">Star</a>
-      </figure>
       <div class="description">
         <h3>preducks is open source</h3>
         <a href="https://github.com/oslabs-beta/preducks">view the repo on GitHub →</a>
+      </div>
+      <div id="team">
+        <div class="team-member">
+          <a href="https://github.com/palgorhythm">
+            <img srcset="./images/team/jacob.jpg, ./images/team/jacob@2x.jpg 2x" src="./images/team/jacob.jpg" />
+            <h5>Jacob Richards</h5>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="https://github.com/maximiliangonzalez">
+            <img srcset="./images/team/max.jpg, ./images/team/max@2x.jpg 2x" src="./images/team/max.jpg" />
+            <h5>Max Gonzalez</h5>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="https://willnapier.co">
+            <img srcset="./images/team/will.jpg, ./images/team/will@2x.jpg 2x" src="./images/team/will.jpg" />
+            <h5>Will Napier</h5>
+          </a>
+          <a href="https://github.com/willnap">
+            <span>GitHub</span>
+          </a>
+        </div>
       </div>
     </section>
     <footer>

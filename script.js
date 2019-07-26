@@ -32,9 +32,9 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   if (userAgent.includes('Win')) {
-    updateDownloadLinks('Windows', 'https://google.com/?search=preducks-windows');
+    updateDownloadLinks('Windows', 'https://github.com/oslabs-beta/preducksDesktop');
   } else if (userAgent.includes('Linux')) {
-    updateDownloadLinks('Linux', 'https://google.com/?search=preducks-linux');
+    updateDownloadLinks('Linux', 'https://github.com/oslabs-beta/preducksDesktop');
   }
 
   if (userAgent.includes('Firefox') || userAgent.includes('FxiOS')) {
@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
   } else if (userAgent.includes('Android')) {
     updateBrowserIcon('android', false, false);
   } else if (userAgent.includes('Safari')) {
-    console.log('safari');
+    updateBrowserIcon('safari');
   } else if (userAgent.includes('Trident') || userAgent.includes('MSIE')) {
     updateBrowserIcon('explorer', true, false);
   }
@@ -74,8 +74,9 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
   setTimeout(() => {
     let app = document.createElement('script');
-    app.src = 'https://www.preducks.com/js/1.bundle.js';
-    app.type = 'text/javascript';
+    app.src = 'https://app.preducks.com/js/index.js';
+    app.type = 'preload';
+    app.of = 'text/javascript';
     app.defer = true;
     document.head.appendChild(app);
   }, 500);
