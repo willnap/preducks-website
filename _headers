@@ -1,0 +1,4 @@
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    cache-control = "public, max-age=604800"
