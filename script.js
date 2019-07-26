@@ -32,9 +32,9 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   if (userAgent.includes('Win')) {
-    updateDownloadLinks('Windows', 'https://github.com/oslabs-beta/preducksDesktop');
+    updateDownloadLinks('Windows', 'https://github.com/oslabs-beta/preducks/releases/download/v1.0/preducks.exe');
   } else if (userAgent.includes('Linux')) {
-    updateDownloadLinks('Linux', 'https://github.com/oslabs-beta/preducksDesktop');
+    updateDownloadLinks('Linux', 'https://github.com/oslabs-beta/preducks/releases/download/v1.0/preducks.deb');
   }
 
   if (userAgent.includes('Firefox') || userAgent.includes('FxiOS')) {
