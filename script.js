@@ -51,15 +51,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (userAgent.includes('Firefox') || userAgent.includes('FxiOS')) {
     updateBrowserIcon('firefox');
-  } else if (userAgent.includes('Edge')) {
+  } else if (userAgent.includes('Edge') || userAgent.includes('EdgiOS') || userAgent.includes('EdgA')) {
     updateBrowserIcon('edge', true);
-  } else if (userAgent.includes('UCBrowser')) {
-    updateBrowserIcon('uc', false, false);
+  } else if (userAgent.includes('UCBrowser') || userAgent.includes('UCWEB')) {
+    updateBrowserIcon('uc');
   } else if (userAgent.includes('Opera') || userAgent.includes('OPR')) {
     updateBrowserIcon('opera');
   } else if (userAgent.includes('SamsungBrowser')) {
     updateBrowserIcon('samsung', false, false);
-  } else if (userAgent.includes('Chrome')) {
+  } else if (userAgent.includes('Chrome') || userAgent.includes('CriOS')) {
     updateBrowserIcon('chrome');
   } else if (userAgent.includes('Android')) {
     updateBrowserIcon('android', false, false);
